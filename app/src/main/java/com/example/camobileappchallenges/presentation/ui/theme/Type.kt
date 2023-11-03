@@ -1,4 +1,4 @@
-package com.example.camobileappchallenges.ui.theme
+package com.example.camobileappchallenges.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

@@ -1,4 +1,4 @@
-package com.example.camobileappchallenges.ui.theme
+package com.example.camobileappchallenges.presentation.ui.theme
 
 
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -9,13 +9,19 @@ import androidx.compose.runtime.Composable
 
 
 private val DarkColorPalette = darkColors(
-    primary = Purple80,
-    secondary = PurpleGrey80,
+    primary = Primary,
+    background = Background,
+    secondary = Secondary,
+    onSecondary = OnSecondary,
+
 )
 
 private val LightColorPalette = lightColors(
-    primary = Purple40,
-    secondary = PurpleGrey40,
+    primary = Primary,
+    background = Background,
+    secondary = Secondary,
+    onSecondary = OnSecondary,
+
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),

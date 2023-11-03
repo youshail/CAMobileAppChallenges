@@ -1,6 +1,5 @@
 plugins {
     id("com.android.application")
-    //id("org.jetbrains.kotlin.android")
     kotlin("android")
     id("dagger.hilt.android.plugin")
     id("kotlin-kapt")
@@ -69,6 +68,14 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.3.0")
     debugImplementation("androidx.compose.ui:ui-tooling:1.3.0")
+    testImplementation("com.squareup.okhttp3:mockwebserver:4.9.3")
+    testImplementation("com.google.truth:truth:1.1.4")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.4")
+
+
+
+
+
 
     // Compose dependencies
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0")
@@ -85,14 +92,16 @@ dependencies {
 
     //Dagger - Hilt
     implementation("com.google.dagger:hilt-android:2.45")
-    kapt("com.google.dagger:hilt-android-compiler:2.37")
-    implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
+    kapt("com.google.dagger:hilt-android-compiler:2.45")
+
+    //implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
     kapt("androidx.hilt:hilt-compiler:1.0.0")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0-alpha03")
 
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    //implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
     implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.2")
     implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2")
 }
